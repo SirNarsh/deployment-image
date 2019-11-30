@@ -1,0 +1,6 @@
+From node:13.2
+RUN apt-get update && \
+	apt-get install rsync ssh zip unzip git -y && \
+	rm -rf /var/lib/apt/lists/*
+
+RUN npm install -g sass
